@@ -51,16 +51,16 @@ int main() {
     cout << "\n\nThe sum of the array is: " << sumList(size, array) << "\n";
     cout << "The product of the array is: " << productList(size, array) << "\n";
     
-    //int* reverse = reverseList(size, array);
+    int* reverse = reverseList(size, array);
 
     cout << "\nThe array is as follows: \n";
     for(int i = 0; i < size; i++){
         cout << "Index " << i << ": " << array[i] << endl;
     }
-    // cout << "\nThe reverse of the array is as follows: \n";
-    // for(int i = 0; i < size; i++){
-    //     cout << "Index " << i << ": " << reverse[i] << endl;
-    // }
+    cout << "\nThe reverse of the array is as follows: \n";
+    for(int i = 0; i < size; i++){
+        cout << "Index " << i << ": " << reverse[i] << endl;
+    }
 
 	return 0;
 }
