@@ -26,17 +26,9 @@ int productList(int size, int* array){ //use pointer of array to grab array from
 
 }
 
-int* reverseList(int size, int* array){
-    int* reverse = new int[size];
-
-    for(int i = 0; i < size; i++){
-        reverse[i] = array[size - 1 - i];
-    }
-
-    return reverse;
-}
-
+//adding some comments for part10
 int main() {
+    
 	int size = 3;
     //int* array = new int[size];
     //int num1, num2, num3;
@@ -50,17 +42,6 @@ int main() {
     
     cout << "\n\nThe sum of the array is: " << sumList(size, array) << "\n";
     cout << "The product of the array is: " << productList(size, array) << "\n";
-    
-    int* reverse = reverseList(size, array);
-
-    cout << "\nThe array is as follows: \n";
-    for(int i = 0; i < size; i++){
-        cout << "Index " << i << ": " << array[i] << endl;
-    }
-    cout << "\nThe reverse of the array is as follows: \n";
-    for(int i = 0; i < size; i++){
-        cout << "Index " << i << ": " << reverse[i] << endl;
-    }
 
 	return 0;
 }
